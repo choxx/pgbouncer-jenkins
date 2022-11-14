@@ -1,7 +1,7 @@
 node() {
     def secrets = [
         [path: 'kv/samarth/esamwad-pgbouncer', engineVersion: 2, secretValues: [
-        [envVar: 'USERS_LIST', vaultKey: 'USERS_LIST'],
+        [envVar: 'USERS_LIST', vaultKey: 'USERS_LIST']]],
     ]
     
     def configuration = [vaultUrl: 'http://128.199.26.225:8200',  vaultCredentialId: 'vault-approle', engineVersion: 2]
