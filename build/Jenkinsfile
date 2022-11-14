@@ -36,8 +36,7 @@ node() {
     }
 
     stage('Remove PEM file') {
-            sh "rm auth+4-key.pem"
-            sh "rm auth+4.pem"
+            sh "rm userlist.txt"
     }
 
     stage('docker-push') {
