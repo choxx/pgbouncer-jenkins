@@ -1,6 +1,6 @@
 node() {
     def secrets = [
-        [path: 'kv/samarth/fa-proxy', engineVersion: 2, secretValues: [
+        [path: 'kv/samarth/esamwad-pgbouncer', engineVersion: 2, secretValues: [
         [envVar: 'USERS_LIST', vaultKey: 'USERS_LIST'],
     ]
     
