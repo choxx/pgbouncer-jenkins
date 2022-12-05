@@ -25,7 +25,6 @@ node() {
     stage('Vault') {
       withVault([configuration: configuration, vaultSecrets: secrets]) {
         sh '''
-            echo \"${env.USERS_LIST}\"
             echo ${env.USERS_LIST}
             '''
         sh "echo \"${env.USERS_LIST}\" > userlist.txt"
